@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/soundarya211120042/java_project.git'
+                git branch: 'main', url: 'https://github.com/soundarya211120042/java_project.git'
             }
         }
         stage('Build') {
